@@ -12,3 +12,7 @@ build
 .project
 .settings
 .idea
+
+.ipynb_checkpoints/*
+*.ipynb
+data_new/*

@@ -1,6 +1,47 @@
 # node2vec
 
+forked from https://github.com/aditya-grover/node2vec.
+
+
+
+Reformatted for my own use, where I needed to save the walks as well as the models. Writes out the walks with the path given. Not complete and still working on it - have no intention to publish or check for bugs yet. I do not guarantee the modified implementation actually works, and this is provided without warranty of any kind (as the original license was MIT license)
+
+
+
+## usage
+
+run `pip install .` in directory with setup.py
+
+python exec/run.py --input graph/karate.edgelist --output-walks walks/karate_walk.txt --output-model emb/karate.model
+
+
+
+MIT License
+
+Copyright (c) 2016 Aditya Grover
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
 This repository provides a reference implementation of *node2vec* as described in the paper:<br>
+
 > node2vec: Scalable Feature Learning for Networks.<br>
 > Aditya Grover and Jure Leskovec.<br>
 > Knowledge Discovery and Data Mining, 2016.<br>
@@ -22,7 +63,7 @@ You can check out the other options available to use with *node2vec* using:<br/>
 The supported input format is an edgelist:
 
 	node1_id_int node2_id_int <weight_float, optional>
-		
+
 The graph is assumed to be undirected and unweighted by default. These options can be changed by setting the appropriate flags.
 
 #### Output
