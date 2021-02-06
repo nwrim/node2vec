@@ -16,7 +16,7 @@ python exec/run.py --input graph/karate.edgelist --output-walks walks/karate_wal
 
 
 
-MIT License
+## MIT License
 
 Copyright (c) 2016 Aditya Grover
 
@@ -38,7 +38,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+---
 
+Following is the README for the original repo:
 
 This repository provides a reference implementation of *node2vec* as described in the paper:<br>
 
